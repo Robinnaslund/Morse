@@ -44,6 +44,18 @@ public class MorseTest {
         assertEquals(expected, actual);
 
     }
+    @Test
+    public void testMorseToEng(){
+
+        Converter convert = new Converter();
+
+        String actual = convert.MorseToEng("*-");
+
+        String expected = "a";
+
+        assertEquals(expected, actual);
+
+    }
 
 
 

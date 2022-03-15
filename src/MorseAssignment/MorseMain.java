@@ -10,20 +10,21 @@ public class MorseMain {
         Converter convert = new Converter();
         Scanner sc = new Scanner(System.in);
 
-        System.out.println(" Type in what english phrase you want to convert:");
+        System.out.println(" Type in morsecode or an english phrase you want to convert:");
+            String phrase = sc.nextLine();
 
-        String phrase = sc.nextLine();
+            while (true) {
 
-        while (true) {
+                System.out.println("It is converted to :" + convert.MorseToEng(phrase));
 
-            System.out.println("your morse is:" + convert.MorseToEng(phrase));
-
-            break;
-        }
+                break;
+            }
     }
-
-
 }
+
+
+
+
 
 
 

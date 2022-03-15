@@ -104,8 +104,10 @@ public class Converter {
     }
 
     public String MorseToEng(String input) {
+        //Felhantering - Konvertera stor bokstav till liten
         input = input.toLowerCase();
         String text = myHash.get(input);
+        //Felhantering om nånting inte kan översättas skriv change your input ut
         if (text == null) {
             text = "Change you input";
 
